@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <!-- Nav bar -->
+    <nav>
+        <div class="left_nav">
+            <img src="images/logo3.png" alt="SoftVerse Logo" class="logo" />
+            <ul class="nav_menu" id="navMenu">
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="right_nav">
+            <div class="dark_mode_toggle" id="darkModeToggle">
+                <i class="bx bx-sun"></i>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>Biodata Kami</h2>
+            <div class="about-container">
+                <!-- Biodata Pertama -->
+                <div class="bio-box">
+                    <img src="images/Foto1.jpg" alt="Foto profile 1" class="about-img">
+                    <div class="about-info">
+                        <p>Nama: Ari Fullah</p>
+                        <p>NIM: 2309106085</p>
+                        <p>Kelas: B2 2023</p>
+                        <p>Hobi: Futsal/Joging</p>
+                    </div>
+                </div>
+                <!-- Biodata Kedua -->
+                <div class="bio-box">
+                    <img src="images/Foto2.jpg" alt="Foto profile 2" class="about-img">
+                    <div class="about-info">
+                        <p>Nama: Vashih Al Farizi</p>
+                        <p>NIM: 2309106076</p>
+                        <p>Kelas: B2 2023</p>
+                        <p>Hobi: </p>
+                    </div>
+                </div>
+                <!-- Biodata Ketiga -->
+                <div class="bio-box">
+                    <img src="images/Foto3.jpg" alt="Foto profile 3" class="about-img">
+                    <div class="about-info">
+                        <p>Nama: Achmad Bayhaqi Nurrahman</p>
+                        <p>NIM: 2309106071</p>
+                        <p>Kelas: B2 2023</p>
+                        <p>Hobi: </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Pop-up untuk verifikasi usia -->
+<div id="agePop" class="pop" style="display: none;">
+    <div class="pop-content">
+        <p>Apakah Anda sudah berusia di atas 18 tahun?</p>
+        <button id="yesBtn">Ya</button>
+        <button id="noBtn">Tidak</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
