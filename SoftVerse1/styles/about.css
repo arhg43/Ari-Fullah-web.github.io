@@ -1,0 +1,112 @@
+#about {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-container {
+    background-color: #0d243ee4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    display: block; /* Mengatur elemen di dalam menjadi vertikal */
+}
+
+.about-info {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.about-info p {
+    margin: 0.5rem 0;
+}
+
+.bio-box {
+    border: 2px solid #4CAF50;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Menyesuaikan lebar bio-box dengan container */
+    margin: 20px auto;
+    text-align: center; /* Mengatur teks dan gambar di tengah */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #efe4e4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark .cart_icon i,
+body.dark .dark_mode_toggle i,
+body.dark .hamburger i {
+    color: black;
+}
+
+body.dark {
+    background-color: #333;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    padding: 0 6vw;
+}
+
+.nav_menu {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav_menu {
+        display: none;
+        flex-direction: column;
+        background-color: #0d243e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav_menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    /* Tampilkan menu saat hamburger diklik */
+    .nav_menu.active {
+        display: flex;
+    }
+}
